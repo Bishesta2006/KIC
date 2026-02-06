@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himalayan Flavors | Authentic Nepali Cuisine</title>
+    <style>
+        :root {
+            --primary: #d32f2f; /* Deep red for warmth/appetite */
+            --secondary: #f57c00; /* Orange/Gold for traditional feel */
+            --dark: #333;
+            --light: #fff;
+            --background: #fafafa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--light);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--primary);
+            color: var(--light);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 { text-align: center; color: var(--primary); font-size: 2.5rem; }
+
+        /* Categories Section */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--light);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); }
+
+        .card-img {
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #555;
+            /* Replace background-color with background-image: url('your-image.jpg'); */
+        }
+
+        .card-content { padding: 20px; }
+        .card-content h3 { margin-top: 0; color: var(--secondary); }
+
+        /* Reviews Section */
+        .reviews { background-color: var(--light); padding: 60px 20px; }
+        .review-card {
+            background: var(--background);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--secondary);
+        }
+        .review-card p { font-style: italic; }
+        .reviewer { font-weight: bold; margin-top: 10px; display: block; }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--light);
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🇳🇵 Himalayan Flavors</div>
+        <nav>
+            <a href="#categories">Categories</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#">Order Now</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Taste the Authentic Nepal</h1>
+        <p>Bringing traditional Himalayan recipes straight to your table.</p>
+    </section>
+
+    <div class="container" id="categories">
+        <h2>Explore Our Categories</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-img" style="background-color: #ffccbc;">[Photo: Momo]</div>
+                <div class="card-content">
+                    <h3>Himalayan Momo</h3>
+                    <p>Steamed dumplings filled with spiced meat or vegetables, served with tangy tomato achaar.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-color: #dcedc8;">[Photo: Dal Bhat]</div>
+                <div class="card-content">
+                    <h3>Traditional Set</h3>
+                    <p>The ultimate comfort food: Rice, lentil soup, curry, and freshly made pickles.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img" style="background-color: #fff9c4;">[Photo: Newari]</div>
+                <div class="card-content">
+                    <h3>Newari Specialities</h3>
+                    <p>Authentic snacks like Choila, Bara, and Samay Baji from the Kathmandu Valley.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            
+            <div class="review-card">
+                <p>"The momos taste exactly like the ones I had in Thamel. Absolutely authentic and delicious!"</p>
+                <span class="reviewer">- Sarah J.</span>
+            </div>
+
+            <div class="review-card">
+                <p>"Finally, a place that makes proper Himalayan tea. The food reminded me of home."</p>
+                <span class="reviewer">- Rajesh K.</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Himalayan Flavors Brand. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
