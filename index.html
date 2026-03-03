@@ -3,191 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himalayan Flavors | Authentic Nepali Cuisine</title>
+    <title>Pawfectglow - Pet Grooming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #d32f2f; /* Deep red for warmth/appetite */
-            --secondary: #f57c00; /* Orange/Gold for traditional feel */
-            --dark: #333;
-            --light: #fff;
-            --background: #fafafa;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background);
-            color: var(--dark);
-            line-height: 1.6;
+            background-color: #FFF8F2;
+            color: #333;
         }
 
-        /* Header */
         header {
-            background-color: var(--light);
-            padding: 1rem 5%;
+            background: #FF8BA7;
+            padding: 15px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary);
+        header h1 {
+            color: white;
         }
 
         nav a {
+            color: white;
             text-decoration: none;
-            color: var(--dark);
-            margin-left: 20px;
+            margin: 0 15px;
             font-weight: 500;
         }
 
-        /* Hero Section */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 60px 50px;
+        }
+
         .hero {
-            background-color: var(--primary);
-            color: var(--light);
+            background: url('https://images.unsplash.com/photo-1517849845537-4d257902454a') no-repeat center/cover;
+            color: white;
             text-align: center;
-            padding: 100px 20px;
+            padding: 120px 20px;
         }
 
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
-        .hero p { font-size: 1.2rem; opacity: 0.9; }
-
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        h2 { text-align: center; color: var(--primary); font-size: 2.5rem; }
-
-        /* Categories Section */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .card {
-            background: var(--light);
+        .hero h2 {
+            font-size: 40px;
+            background: rgba(0,0,0,0.5);
+            display: inline-block;
+            padding: 15px 25px;
             border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
         }
 
-        .card:hover { transform: translateY(-5px); }
-
-        .card-img {
-            height: 200px;
-            background-color: #ddd;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            color: #555;
-            /* Replace background-color with background-image: url('your-image.jpg'); */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #FF8BA7;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
         }
 
-        .card-content { padding: 20px; }
-        .card-content h3 { margin-top: 0; color: var(--secondary); }
-
-        /* Reviews Section */
-        .reviews { background-color: var(--light); padding: 60px 20px; }
-        .review-card {
-            background: var(--background);
-            padding: 20px;
-            border-radius: 10px;
+        .about, .booking, .contact, .qna {
+            background-color: #FFE5EC;
             margin-bottom: 20px;
-            border-left: 5px solid var(--secondary);
+            border-radius: 10px;
         }
-        .review-card p { font-style: italic; }
-        .reviewer { font-weight: bold; margin-top: 10px; display: block; }
 
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: var(--light);
+        .members, .reviews {
+            background-color: #DFF6F0;
+            border-radius: 10px;
+        }
+
+        .member-container, .review-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .member-card, .review-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
             text-align: center;
-            padding: 30px;
-            margin-top: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
+        .member-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 50px;
+        }
+
+        footer .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        footer a {
+            color: #FF8BA7;
+            text-decoration: none;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">🇳🇵 Himalayan Flavors</div>
-        <nav>
-            <a href="#categories">Categories</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#">Order Now</a>
-        </nav>
-    </header>
+<header>
+    <h1>Pawfectglow</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#booking">Booking Appointment</a>
+        <a href="#contact">Contacts</a>
+        <a href="#qna">QnA</a>
+    </nav>
+</header>
 
-    <section class="hero">
-        <h1>Taste the Authentic Nepal</h1>
-        <p>Bringing traditional Himalayan recipes straight to your table.</p>
-    </section>
+<section class="hero" id="home">
+    <h2>Professional Grooming for Your Paw Friends</h2>
+    <br>
+    <a href="#booking" class="btn">Book Now</a>
+</section>
 
-    <div class="container" id="categories">
-        <h2>Explore Our Categories</h2>
-        
-        <div class="grid">
-            <div class="card">
-                <div class="card-img" style="background-color: #ffccbc;">[Photo: Momo]</div>
-                <div class="card-content">
-                    <h3>Himalayan Momo</h3>
-                    <p>Steamed dumplings filled with spiced meat or vegetables, served with tangy tomato achaar.</p>
-                </div>
-            </div>
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>Pawfectglow is dedicated to providing premium pet grooming services. Our mission is to ensure every pet feels comfortable, loved, and beautifully groomed. We use safe products and professional techniques to keep your furry companions happy and healthy.</p>
+</section>
 
-            <div class="card">
-                <div class="card-img" style="background-color: #dcedc8;">[Photo: Dal Bhat]</div>
-                <div class="card-content">
-                    <h3>Traditional Set</h3>
-                    <p>The ultimate comfort food: Rice, lentil soup, curry, and freshly made pickles.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img" style="background-color: #fff9c4;">[Photo: Newari]</div>
-                <div class="card-content">
-                    <h3>Newari Specialities</h3>
-                    <p>Authentic snacks like Choila, Bara, and Samay Baji from the Kathmandu Valley.</p>
-                </div>
-            </div>
+<section class="members">
+    <h2>Our Grooming Experts</h2>
+    <div class="member-container">
+        <div class="member-card">
+            <img src="member1.jpg" alt="Member 1">
+            <h3>Member Name</h3>
+            <p>Senior Groomer</p>
+        </div>
+        <div class="member-card">
+            <img src="member2.jpg" alt="Member 2">
+            <h3>Member Name</h3>
+            <p>Pet Stylist</p>
         </div>
     </div>
+</section>
 
-    <section class="reviews" id="reviews">
-        <div class="container">
-            <h2>What Our Customers Say</h2>
-            
-            <div class="review-card">
-                <p>"The momos taste exactly like the ones I had in Thamel. Absolutely authentic and delicious!"</p>
-                <span class="reviewer">- Sarah J.</span>
-            </div>
+<section class="booking" id="booking">
+    <h2>Booking Appointment</h2>
+    <p>Call us or fill out the form to book your pet’s grooming session.</p>
+    <form>
+        <input type="text" placeholder="Your Name" required><br><br>
+        <input type="text" placeholder="Pet Name" required><br><br>
+        <input type="date" required><br><br>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</section>
 
-            <div class="review-card">
-                <p>"Finally, a place that makes proper Himalayan tea. The food reminded me of home."</p>
-                <span class="reviewer">- Rajesh K.</span>
-            </div>
+<section class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review-container">
+        <div class="review-card">
+            <p>"Amazing service! My dog looks fantastic."</p>
+            <strong>- Happy Customer</strong>
         </div>
-    </section>
+        <div class="review-card">
+            <p>"Professional and caring staff. Highly recommend!"</p>
+            <strong>- Pet Lover</strong>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Himalayan Flavors Brand. All rights reserved.</p>
-    </footer>
+<section class="qna" id="qna">
+    <h2>QnA</h2>
+    <p><strong>Q: How often should I groom my pet?</strong><br>A: It depends on breed, but generally every 4-6 weeks.</p>
+    <p><strong>Q: Are your products safe?</strong><br>A: Yes, we use only pet-friendly and vet-approved products.</p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@pawfectglow.com</p>
+    <p>Phone: +977-9800000000</p>
+    <p>Location: Kathmandu, Nepal</p>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <h3>Pawfectglow</h3>
+            <p>Pawfectglow is your trusted pet grooming partner, delivering care, hygiene, and style for your beloved pets.</p>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Twitter</a></p>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2026 Pawfectglow. All Rights Reserved.
+    </div>
+</footer>
 
 </body>
 </html>
